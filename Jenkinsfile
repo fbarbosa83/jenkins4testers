@@ -15,7 +15,7 @@ pipeline {
         }
         stage("Tests"){
             steps{
-                sh "bundle exec cucumber -p ci"
+                sh "bundler exec cucumber -p ci"
             }
         }
     }
