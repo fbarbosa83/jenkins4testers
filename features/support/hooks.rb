@@ -11,4 +11,3 @@ Before("@login") do
   @login_page.go
   @login_page.with(user["email"], user["pass"])
 end
-

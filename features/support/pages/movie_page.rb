@@ -1,4 +1,6 @@
-class MoviePage < BasePage
+class MoviePage #< BasePage
+  include Capybara::DSL
+
   def initialize
     @movie_list = "table tbody tr"
   end
