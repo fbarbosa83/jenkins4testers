@@ -10,6 +10,7 @@ pipeline {
             steps{
                 sh "chmod +x ./build/alpine.sh"
                 sh "./build/alpine.sh"
+                sh "gem install capybara"
                 sh "bundle install"
             }
         }
