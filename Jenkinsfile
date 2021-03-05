@@ -15,7 +15,7 @@ pipeline {
         }
         stage("Tests"){
             steps{
-                sh "cucumber -p ci"
+                sh "bundler exec cucumber -t @login_happy -p ci"
             }
         }
     }
